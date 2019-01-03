@@ -3,7 +3,7 @@ import * as http from 'http'
 import * as util from 'util'
 import * as url from 'url'
 import * as os from 'os'
-import { sniffOn } from './httpsniffer.ts'
+import { sniffOn } from './httpsniffer'
 
 const hostname = '127.0.0.1'
 const port = 3000
