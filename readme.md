@@ -2,4 +2,8 @@
 
 Inspired by [this project](https://github.com/Microsoft/TypeScript-Node-Starter)
 
-More info: **TODO**
+To run this example do
+
+```shell
+ts-node src/index.ts
+```
