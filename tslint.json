@@ -9,5 +9,7 @@
         "no-var-requires": false,
         "ordered-imports": false
     },
-    "rulesDirectory": []
+    "exclude": [
+        "./node_modules"
+    ]
 }

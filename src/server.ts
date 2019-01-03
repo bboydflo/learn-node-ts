@@ -3,6 +3,7 @@ import * as http from 'http'
 import * as util from 'util'
 import * as url from 'url'
 import * as os from 'os'
+import { sniffOn } from './httpsniffer.ts'
 
 const hostname = '127.0.0.1'
 const port = 3000
@@ -73,6 +74,10 @@ server.on('request', (req: http.IncomingMessage, res: http.ServerResponse) => {
   }
 })
 
+// sniff on this server instance
+sniffOn(server)
+
+// start listening for incoming connections
 server.listen(port, hostname, () => {
   // tslint:disable-next-line:no-console
   console.log(`Server running at http://${hostname}:${port}/`)
